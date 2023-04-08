@@ -9,6 +9,7 @@ contract upgradeTest is UUPSUpgradeable, OwnableUpgradeable {
 
     function initialize(uint val) external {
         value = val;
+        __Ownable_Int()
     }
 
     // This Only Implement When You Deploy Uups Upgradable Contract
